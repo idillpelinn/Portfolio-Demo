@@ -1,60 +1,88 @@
 :root {
-    --custom-red: 0, 80%, 50%;
-    --custom-purple: 270, 80%, 50%;
-    --custom-blue: 210, 80%, 50%;
-    --custom-orange: 30, 80%, 50%;
-  }
-body{
-    padding:0;
-    margin:0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-a{
-    text-decoration: none;
-    color:white
-}
-.navbar{
-    color:white;
-    background-color:#a393eb;
-    font-size: 1.25em;
-    display: grid;
-    justify-content:space-evenly;
-    align-items: center;
-    grid-auto-flow: column;
-    grid-template-columns: auto;
-    grid-template-rows: 100px;
-
+  --mesh-red: 0, 100%, 50%;
+  --mesh-purple: 270, 100%, 50%;
+  --mesh-blue: 240, 100%, 50%;
+  --mesh-orange: 30, 100%, 50%;
 }
 
-.navbar-logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: cursive;
+  color: black;
 }
-.navbar-logo img{
-    width:50px;
-    height: 50px;  
+a {
+  text-decoration: none;
+  color: black;
 }
-.navbar-logo a{
-    
-    color:white;
-   
+.navbar a {
+  color: gray;
+}
+.navbar {
+  background-color: #e6e6fa;
+  font-size: 1.25em;
+  display: grid;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-auto-flow: column;
+  grid-template-columns: auto;
+  grid-template-rows: 66px;
+}
+.navbarlogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbarlogo img {
+  width: 50px;
+  height: 50px;
+}
+.homeprofile {
+  padding: 0px 25%;
+  width: auto;
+  height: 100vh;
+  position: relative;
+  background: radial-gradient(
+      at 38% 100%,
+      hsla(var(--mesh-red), 0.5),
+      transparent 50%
+    ),
+    radial-gradient(at 97% 50%, hsla(var(--mesh-purple), 0.5), transparent 70%),
+    radial-gradient(at 80% 130%, hsla(var(--mesh-blue), 0.5), transparent 40%),
+    radial-gradient(at 20% 160%, hsla(var(--mesh-orange), 0.5), transparent 30%);
+  display: flex;
+  flex-direction: column;
 }
 
+.homeprofile .homeone {
+  padding: 50px 20% 0px;
+  display: grid;
 
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+  justify-content: center;
+}
+.homeone img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.homethree {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
 
-  /*
-  .bos{
-    position: relative; 
-    top: 300px;
-    width: 400px;
-    height: 300px;
-    background: 
-      radial-gradient(at 40% 90%, hsla(var(--custom-red)) 0px, transparent 40%),
-      radial-gradient(at 90% 60%, hsla(var(--custom-purple)) 0px, transparent 50%),
-      radial-gradient(at 75% 120%, hsla(var(--custom-blue)) 0px, transparent 50%),
-      radial-gradient(at 20% 150%, hsla(var(--custom-orange)) 0px, transparent 50%);
-    margin: 0;
-  }
-  
-*/
+.homebutton button {
+  margin: 3px 0px;
+  padding: 8px 18px;
+  background-color: #e6e6fa;
+  border: none;
+  border-radius: 30px;
+}
+.homelinks i {
+  font-size: 30px;
+  margin-left: 40px;
+}
