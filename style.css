@@ -57,11 +57,10 @@ a {
 }
 
 .homeprofile .homeone {
-  padding: 50px 20% 0px;
+  padding: 0px 20% 0px;
   display: grid;
 
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   justify-content: center;
 }
 .homeone img {
@@ -71,8 +70,10 @@ a {
 }
 .homethree {
   margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .homebutton button {
@@ -81,8 +82,9 @@ a {
   background-color: #e6e6fa;
   border: none;
   border-radius: 30px;
+  margin-right: 40px;
 }
 .homelinks i {
   font-size: 30px;
-  margin-left: 40px;
+  margin-right: 40px;
 }
