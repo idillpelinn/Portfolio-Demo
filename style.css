@@ -10,40 +10,40 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: cursive;
+  font-family:cursive;
   color: black;
 }
 a {
   text-decoration: none;
   color: black;
-}
-.navbar a {
-  color: gray;
+  font-size: 20px
 }
 .navbar {
+  height: 50px;
   background-color: #e6e6fa;
-  font-size: 1.25em;
-  display: grid;
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
-  grid-auto-flow: column;
-  grid-template-columns: auto;
-  grid-template-rows: 66px;
+  padding-top: 20px;
 }
-.navbarlogo {
-  display: flex;
-  align-items: center;
+.navbar h1{
+  color:black;
+  font-size: 20px;
+  font-weight: 200;
+}
+.home-container{
+  position:relative;
+  display:flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  
 }
-.navbarlogo img {
-  width: 50px;
-  height: 50px;
-}
-.homeprofile {
-  padding: 0px 25%;
-  width: auto;
-  height: 100vh;
-  position: relative;
+.about-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: radial-gradient(
       at 38% 100%,
       hsla(var(--mesh-red), 0.5),
@@ -52,22 +52,42 @@ a {
     radial-gradient(at 97% 50%, hsla(var(--mesh-purple), 0.5), transparent 70%),
     radial-gradient(at 80% 130%, hsla(var(--mesh-blue), 0.5), transparent 40%),
     radial-gradient(at 20% 160%, hsla(var(--mesh-orange), 0.5), transparent 30%);
+
+}
+.about-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-block:100px;
+  gap:30px;
+}
+.about-container .about-content img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+
+}
+.about-content .main-header{
   display: flex;
   flex-direction: column;
-}
-
-.homeprofile .homeone {
-  padding: 0px 20% 0px;
-  display: grid;
-
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  align-items: center;
   justify-content: center;
+
 }
-.homeone img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+.about-container p{
+      width: auto;
+
 }
+.about-contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+/*
+
+.homeone
 .homethree {
   margin-top: 20px;
   display: flex;
