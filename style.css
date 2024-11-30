@@ -24,7 +24,10 @@ a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 20px;
+  padding: 5px 0;
+  /* Mavi bir border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Gölgeli efekt */
+  border-radius: 10px; /* Köşeleri yumuşatmak için (isteğe bağlı) */
 }
 .navbar h1 {
   color: black;
@@ -38,26 +41,36 @@ a {
   justify-content: center;
   align-items: center;
 }
+.home-container::before {
+  background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Stars.svg?sanitize=true);
+}
+
+.home-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  z-index: -1;
+}
 .about-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(
-      at 38% 100%,
-      hsla(var(--mesh-red), 0.5),
-      transparent 50%
-    ),
-    radial-gradient(at 97% 50%, hsla(var(--mesh-purple), 0.5), transparent 70%),
-    radial-gradient(at 80% 130%, hsla(var(--mesh-blue), 0.5), transparent 40%),
-    radial-gradient(at 20% 160%, hsla(var(--mesh-orange), 0.5), transparent 30%);
+  background-color: #e6e6fa;
+  margin-inline: 10%;
+  margin-block: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Gölgeli efekt */
+  border-radius: 10px; /* Köşeleri yumuşatmak için (isteğe bağlı) */
 }
+
 .about-content {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-block-start: 100px;
+  margin-block-start: 20px;
+
   gap: 30px;
 }
 .about-container .about-content img {
@@ -81,4 +94,39 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  margin-block: 30px;
+}
+
+.about-contact .about-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.about-btn a {
+  width: 180px;
+  height: 30px;
+  font-size: 16px;
+  border: 2px solid white;
+  border-radius: 15px;
+  background-color: white;
+  padding: 4px 8px;
+  margin-inline: 20px;
+  text-align: center;
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.4); /* Gölgeli efekt */
+}
+.about-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.about-links a {
+  font-size: 25px;
+  border: 2px solid white;
+  border-radius: 15px;
+  background-color: transparent;
+  padding: 4px 8px;
+  margin-inline: 20px;
+  text-align: center;
 }
