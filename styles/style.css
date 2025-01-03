@@ -4,7 +4,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Poppins", sans-serif;
-  background-color: #1d192b;
+  background-color: #2b223f;
   color: #d9d9d9;
 }
 a {
@@ -18,7 +18,7 @@ ul {
   position: fixed;
   width: 100%;
   height: 66px;
-  background-color: #2b223f;
+  background-color: #1d192b;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -88,7 +88,7 @@ ul {
   margin-block: 10px;
 }
 .home-section .home-button .btn {
-  width: 195px;
+  width: 250px;
   height: 64px;
   border-radius: 54px;
   border: none;
@@ -200,26 +200,6 @@ ul {
   color: #d9d9d9;
 }
 
-/*
-*
-*
-*
-*
-
-*
-*
-*
-
-
-*
-*
-*
-*
-*
-
-
-**/
-
 .experience-section {
   width: 100%;
   height: 100vh;
@@ -227,6 +207,7 @@ ul {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 120px;
 }
 .experience-section .experience-skill {
   display: flex;
@@ -244,4 +225,67 @@ ul {
 .experience-section .experience-skill .exp-logos .logo {
   width: 120px;
   height: auto;
+}
+.experience-section .jobs {
+  color: #a39c9c;
+  max-width: 1320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.experience-section .jobs .job-card .job-title-main {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.experience-section .jobs .job-card .job-title-main img {
+  width: 50px;
+  height: 50px;
+}
+.experience-section .jobs .job-card .job-title-main .job-title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer-container {
+  color: #a39c9c;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #1d192b;
+}
+
+.footer-container .footer-content {
+  margin-block: 50px;
+  width: 1320px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer-container .footer-content h1 {
+  font-size: 48px;
+}
+
+.footer-container .footer-content .footer-social {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.footer-container .bottom-footer {
+  padding-block: 10px;
+  width: 100%;
+  background-color: #100e16;
+  display: flex;
+  list-style: center;
+  justify-content: center;
 }
